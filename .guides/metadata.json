@@ -1,0 +1,45 @@
+{
+ "sections": [
+  {
+   "id": "27cdd195-9ce7-07c7-988c-13338e68da7e",
+   "title": "Adivina el número",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "adivina.cpp",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#terminal: clear",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Adivina-el-n-mero-27cd.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "closeTerminalSession": true,
+   "learningObjectives": ""
+  }
+ ],
+ "theme": "light",
+ "scripts": [],
+ "lexikonTopic": "",
+ "suppressPageNumbering": true,
+ "useSubmitButtons": true,
+ "useMarkAsComplete": true,
+ "hideMenu": false,
+ "allowGuideClose": false,
+ "collapsedOnStart": false,
+ "hideSectionsToggle": false,
+ "hideBackToDashboard": true,
+ "protectLayout": true
+}

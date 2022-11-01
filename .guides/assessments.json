@@ -1,0 +1,62 @@
+[
+ {
+  "type": "test",
+  "taskId": "test-98155593",
+  "source": {
+   "name": "guess-the-number",
+   "showName": false,
+   "instructions": "Haz clic en el botón siguiente, una vez que hayas terminado.\n\nSi la corrección automática te dice que hay algún error, podrás repetir la entrega todas las veces que lo necesites.",
+   "command": "python3 .guides/secure/07-guess-the-number-test.py",
+   "timeoutSeconds": 40,
+   "guidance": "",
+   "showGuidanceAfterResponseOption": {
+    "type": "Never"
+   },
+   "maxAttemptsCount": 0,
+   "points": 20,
+   "arePartialPointsAllowed": false,
+   "metadata": {
+    "tags": [
+     {
+      "name": "Assessment Type",
+      "value": "Advanced Code Test"
+     },
+     {
+      "name": "Content",
+      "value": "while for if"
+     },
+     {
+      "name": "Programming Language",
+      "value": "C++"
+     }
+    ],
+    "files": [
+     "adivina.cpp",
+     ".guides/secure/07-guess-the-number-test.py",
+     "ticlib.h"
+    ],
+    "layout": "3-cell",
+    "pageTitle": "Adivina el número",
+    "buttonText": "Check It!",
+    "content": "## Descripción\n\nEn este proyecto vas a escribir un programa para jugar a adivinar un número. El ordenador seleccionará un número al azar, y el usuario tendrá que adivinarlo. Cada vez que el usuario haga un intento de adivinar, el ordenador le contestará diciéndole si el número que tiene que adivinar es mayor o menor que el número que el usuario ha dicho. Cuando el usuario adivine, el ordenador le dirá el número de intentos que ha necesitado para adivinarlo\n\n## Ejemplo\n\nEn el siguiente vídeo puedes ver un ejemplo de ejecución del programa\n\n## Especificaciones\n\nEl programa debe mostrar un mensaje después de cada intento que realice el usuario.\n\n- Si el número secreto es mayor que el número escrito por el usuario, el mensaje deberá contener la palabra `mayor`. Por ejemplo: `El número secreto es mayor que el que has escrito.`.\n- Si el número secreto es menor que el número escrito por el usuario, el mensaje deberá contener la palabra `menor`. Por ejemplo: `El número secreto es menor que el que has escrito.`.\n- Si el número secreto es igual al número escrito por el usuario (es decir, que el usuario ha adivinado el número), entonces debe indicarse el número de intentos, apareciendo expresamente la palabra `intentos`. Por ejemplo: `Has adivinado en 6 intentos.`.\n\n## Números aleatorios\n\nEn este programa, el ordenador tendrá que generar un número aleatorio (porque si no el juego no tiene mucha gracia). Para obtener un número entero aleatorio, usa la expresión:\n\n```C++\nrandom_int(min, max)\n```\n\nEn la expresión anterior, `min` y `max` son los valores mínimo y máximo, respectivamente, del valor aleatorio escogido. Por ejemplo, para generar un número aleatorio entre 1 y 6, y guardarlo en una variable llamada `x`, escribiríamos:\n\n```C++\nint x {random_int(1, 6)};\n```\n## Diseña el programa\n\nPara escribir el programa, es recomendable que lo vayas completando por partes:\n\n### Variables\n\nPrimero piensa en las variables, sus tipos y los nombres que les darás. Necesitarás tres variables:\n\n-   una para guardar el número secreto que hay que adivinar;\n-   otra para guardar el número que el usuario escriba intentando adivinar el número secreto;\n-   una tercera para llevar la cuenta del número de intentos realizados por el usuario.\n\nTen en cuenta que el número secreto debe ser aleatorio (lee arriba cómo conseguir eso).\n\n|||important\n## Variables\n\nEscribe las sentencias necesarias para crear las variables y darles sus valores iniciales.\n|||\n\n### Programa un único intento\n\nPara que el usuario haga un intento, tendrás que:\n- guardar, en la variable correspondiente, el número que el usuario escriba;\n- comprobar si el número escrito es mayor o menor que el número secreto (sentencia `if`), mostrando los mensajes adecuados.\n\n|||important\n## Un intento\n\nEscribe las sentencias necesarias para que el usuario pueda hacer un intento.\n|||\n\n\n|||warning\n## Mensajes después de los intentos\n\nRecuerda las especificaciones sobre los mensajes que deben aparecer después de cada intento.\n|||\n\n### Bucle principal\n\nPara que el usuario pueda realizar varios intentos, deberás repetir las sentencias anteriores (las de un único intento) dentro de un bucle.\n\nPiensa:\n- ¿Qué tipo de bucle es más adecuado (`for` o `while`)?\n- ¿Qué condición debe cumplirse para que el bucle siga repitiéndose?\n\nAdemás, dentro del bucle, deberás incrementar la variable que lleva la cuenta del número de intentos.\n\n\n|||important\n## Bucle principal\n\nEscribe el bucle principal, copiando dentro las sentencias de un intento, y añadiendo la sentencia que incrementa el número de intentos.\n|||\n\n## Entrega el proyecto\n\n<<<<<library-assessment>>>>>\n",
+    "opened": [
+     {
+      "type": "file",
+      "panelNumber": 0,
+      "content": "adivina.cpp"
+     },
+     {
+      "type": "terminal",
+      "panelNumber": 1,
+      "content": "clear"
+     }
+    ]
+   },
+   "bloomsObjectiveLevel": "4",
+   "learningObjectives": "loops"
+  },
+  "linkedId": "e91c7e88-deab-4811-ad5d-099c625296cc",
+  "libraryId": "0698d731-d0a2-49a0-8c69-62b490aa01a1",
+  "version": 0
+ }
+]
